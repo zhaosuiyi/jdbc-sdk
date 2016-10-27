@@ -1,0 +1,17 @@
+版本修订 记录
+
+1. 
+	1.0.0 原生版本
+2.
+	1.0.1 修订日期 2016.7.20
+	修订目的:1.支持不同业务sql可以独立配置 
+	兼容版本:1.0.0 
+	新增支持:1.同一别名 多个sql.xml配置  2.设置默认别名   3.支持手动添加sql.xml配置  
+	新增方法:
+	1.SQLTable类：
+	 loadSQLConfigs-支持多个sql配置 添加到同一别名
+	 exists-别名 是否存在
+	 2.DAO类：
+	 setDefaultPoolName-设置 默认别名
+	 loadSQLConfig-手动加载配置
+	 registeConnectionPoolExtend-数据源配置

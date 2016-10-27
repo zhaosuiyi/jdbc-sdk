@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxool>
+		<alias>test</alias>
+		
+		<!-- <driver-url>jdbc:oracle:thin:@192.168.18.80:1521:jspt</driver-url>-->
+		<driver-url>jdbc:mysql://10.0.0.3:3307/bang?characterEncoding=utf-8</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class> 
+		<driver-properties> 
+			<property name="user" value="root"/>
+			<property name="password" value="haoxuan"/>
+			<!-- 自动重连 -->
+			<property name="autoReconnect" value="true" />
+		</driver-properties>
+		
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time> 
+		<prototype-count>5</prototype-count>
+		<maximum-connection-count>200</maximum-connection-count> 
+		<minimum-connection-count>10</minimum-connection-count>
+		
+		<house-keeping-test-sql>SELECT CURRENT_DATE  from dual</house-keeping-test-sql>
+		<test-before-use>true</test-before-use>
+		<test-after-use>true</test-after-use>
+	</proxool>
+	
+	
+	
