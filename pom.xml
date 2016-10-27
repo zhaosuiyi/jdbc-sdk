@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.sdk</groupId>
 	<artifactId>jdbc-sdk</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<properties>
 		<mysql.version>5.1.18</mysql.version>
@@ -85,16 +85,14 @@
 	<!-- 发布到远程仓库 -->
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
-			<name>Release Repository</name>
-			<url>http://192.168.30.152:8081/nexus/content/repositories/releases</url>
+			<id>sx-releases</id>
+			<name>Sx Releases Repository</name>
+			<url>http://120.27.233.193:8081/nexus/content/repositories/sx-releases</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Snapshots Repository</name>
-			<url>http://192.168.30.152:8081/nexus/content/repositories/snapshots</url>
-			<!-- <uniqueVersion>表示是否为Snapshot版本分配一个包含时间戳的构建号 -->
-			<uniqueVersion>true</uniqueVersion>
+			<id>sx-snapshots</id>
+			<name>Sx Snapshots Repository</name>
+			<url>http://120.27.233.193:8081/nexus/content/repositories/sx-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
